@@ -42,37 +42,25 @@ public class NoteJFrame extends JFrame implements ActionListener {
 
         }else if(obj == update){
             System.out.println("修改按钮被点击");
+
             //逻辑：
             //1.先判断用户有没有选择表格中的数据
             //2.如果没有选择，弹框提示：未选择。此时提示的弹框用showJDialog方法即可
             //3.如果选择了，跳转添加界面
 
-
             int i = table.getSelectedRow();
             System.out.println(i);
 
-
-
-
-
-
-
         }else if(obj == delete){
             System.out.println("删除按钮被点击");
+
             //逻辑：
             //1.先判断用户有没有选择表格中的数据
             //2.如果没有选择，弹框提示：未选择。此时提示的弹框用showJDialog方法即可
             //3.如果选择了，弹框提示：是否确定删除。此时提示的弹框用showChooseJDialog方法
 
-
-
             int i = showChooseJDialog();
             System.out.println(i);
-
-
-
-
-
 
         }else if(obj == exportItem){
             System.out.println("菜单的导出功能");
